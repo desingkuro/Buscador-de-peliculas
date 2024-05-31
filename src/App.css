@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+.containerPeliculas{
+    width: 100%;
+}
+.peliculas{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    color: #ffff;
+}
+
+.pelicula{
+    list-style: none;
+    margin: 0%;
+    padding:0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 350px;
+    max-width: 270px;
+    background-color: rgb(82, 82, 82);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pelicula img{
+    border-radius: 10px;
+    height: 260px;
+}
+.pelicula h3, .pelicula p{
+    margin: 0%;
+    padding: 0%;
+}
+.headerPelicula{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    >h3{
+        font-size: .9rem;
+        color: #ffff;
+    }
+}
